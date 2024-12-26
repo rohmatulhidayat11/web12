@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Meoza</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cookie&family=Playball&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar" style="background-color: #e3f2fd;">
+        <div class="container">
+          <a class="navbar-brand" href="#"><strong></strong> Meoza</a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Hotel Meoza</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#about">Tentang Kami</a>
+                <a class="nav-link" href="#branches">Cabang</a>
+                <a class="nav-link" href="#promotions">Promo</a>
+                <a class="nav-link" href="#reservation">Reservasi</a>
+                <a class="nav-link" href="#pricing">Harga Kamar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+   <!-- Header -->
+   <header>
+    <section id="home" class="home w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+    <div class="detail-box">
+      <div class="col-md-8 col-lg-6 mx-auto">
+        <div class="inner_detail-box">
+          <h1>
+            Hotel Meoza
+          </h1>
+          <p>
+            Hotel Meoza offers the ultimate blend of luxury, comfort, and exceptional service.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </header>
+  <!-- Content -->
+  <div class="container">
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2 class="text-center">Tentang Kami</h2>
+      <p class="text-center">Hotel Comfort adalah pilihan terbaik untuk pengalaman penginapan yang tak terlupakan. Kami menawarkan layanan eksklusif dan fasilitas modern untuk membuat masa tinggal Anda nyaman.</p>
+    </section>
+
+    <!-- Image Slider -->
+    <div id="imageCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/g1.jpg" class="d-block w-100" alt="Hotel Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/g6.jpg" class="d-block w-100" alt="Hotel Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider-bg.jpg" class="d-block w-100" alt="Hotel Image 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Branches Section -->
+    <section id="branches" class="cabang">
+      <h2 class="text-center">Cabang Kami</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/g1.jpg" class="card-img-top" alt="Cabang 1">
+            <div class="card-body">
+              <h5 class="card-title">Cabang Jakarta</h5>
+              <p class="card-text">Lokasi strategis di pusat kota Jakarta.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/g6.jpg" class="card-img-top" alt="Cabang 2">
+            <div class="card-body">
+              <h5 class="card-title">Cabang Bandung</h5>
+              <p class="card-text">Dekat dengan tempat wisata favorit di Bandung.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/slider-bg.jpg" class="card-img-top" alt="Cabang 3">
+            <div class="card-body">
+              <h5 class="card-title">Cabang Bali</h5>
+              <p class="card-text">Nikmati suasana tropis di Bali.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotions Section -->
+    <section id="promotions" class="promosi">
+      <h2 class="text-center">Promosi</h2>
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Paket</th>
+            <th>Harga</th>
+            <th>Waktu</th>
+            <th>Syarat & Ketentuan</th>
+            <th>Deskripsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paket Weekend</td>
+            <td>Rp 750.000</td>
+            <td>Jumat - Minggu</td>
+            <td>Minimal 2 malam</td>
+            <td>Paket eksklusif untuk akhir pekan.</td>
+          </tr>
+          <tr>
+            <td>Paket Honeymoon</td>
+            <td>Rp 2.000.000</td>
+            <td>Setiap hari</td>
+            <td>Pasangan sah</td>
+            <td>Cocok untuk pasangan baru menikah.</td>
+          </tr>
+          <tr>
+            <td>Paket Keluarga</td>
+            <td>Rp 1.500.000</td>
+            <td>Setiap hari</td>
+            <td>4 orang</td>
+            <td>Paket untuk keluarga kecil.</td>
+          </tr>
+          <tr>
+            <td>Paket Long Stay</td>
+            <td>Rp 5.000.000</td>
+            <td>1 minggu</td>
+            <td>Minimal 7 hari</td>
+            <td>Diskon untuk menginap lama.</td>
+          </tr>
+          <tr>
+            <td>Paket Bisnis</td>
+            <td>Rp 1.200.000</td>
+            <td>Senin - Jumat</td>
+            <td>Individu</td>
+            <td>Fasilitas lengkap untuk perjalanan bisnis.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Reservation Form -->
+    <section id="reservation" class="form">
+      <h2 class="text-center">Form Reservasi</h2>
+      <div class="container px-5 my-5">
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <div class="mb-3">
+                <label class="form-label" for="nama">Nama</label>
+                <input class="form-control" id="nama" type="text" placeholder="Nama" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="nama:required">Nama is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="emailAddress">Email Address</label>
+                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="tglCheckIn">Tgl check-in</label>
+                <input class="form-control" id="tglCheckIn" type="text" placeholder="Tgl-bln-thn" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="tglCheckIn:required">Tgl check-in is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Tipe Kamar</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" id="delux" type="radio" name="tipeKamar" data-sb-validations="" />
+                    <label class="form-check-label" for="delux">Delux</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" id="suite" type="radio" name="tipeKamar" data-sb-validations="" />
+                    <label class="form-check-label" for="suite">Suite</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" id="presidential" type="radio" name="tipeKamar" data-sb-validations="" />
+                    <label class="form-check-label" for="presidential">Presidential</label>
+                </div>
+            </div>
+            <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                    <div class="fw-bolder">Form submission successful!</div>
+                    <p>To activate this form, sign up at</p>
+                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                </div>
+            </div>
+            <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">Error sending message!</div>
+            </div>
+            <div class="d-grid">
+                <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </section>
+
+    <!-- Pricing Table -->
+    <section id="pricing" class="harga">
+      <h2 class="text-center">Harga Kamar</h2>
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Tipe Kamar</th>
+            <th>Harga per Malam</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Deluxe</td>
+            <td>Rp 1.000.000</td>
+          </tr>
+          <tr>
+            <td>Suite</td>
+            <td>Rp 2.000.000</td>
+          </tr>
+          <tr>
+            <td>Presidential</td>
+            <td>Rp 5.000.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>contact us</h5>
+          <ul>
+            <p>Srengseng Sawah, Jakarta Selatan</p>
+            <li><a href="#">089112337771</a></li>
+            <li><a href="#">088989898009</a></li>
+            <li><a href="#">meozawedding@gmail.com</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-3">
+          <h5>Blog</h5>
+          <ul>
+            <li><a href="https://www.traveloka.com/id-id/hotel/indonesia/region/jakarta-102813?id=12719448138323254119&adloc=id-id&kw=hotel%20jakarta&gmt=e&gn=g&gd=c&gdm=&gcid=710220722137&gdp=&gdt=&gap=&pc=1&cp=ID_HO_SM_AU_AL_Google+-+HO+-+Search-ID/id+-+NB+-+DOM+-+ID_Jakarta_ALL-X+|+QueryType:Generic+Location,AT:Hotel,CID:100003,RID:102813_Hotel+Jakarta+|+HO:DOM+-+ID_Jakarta_Jakarta-X,LID:102813,MT:Exact&aid=169035367329&wid=kwd-128007758&fid=&gid=9215384&utm_id=OA2CfGV8&ad_id=710220722137&target_id=kwd-128007758&click_id=Cj0KCQiAvP-6BhDyARIsAJ3uv7b8VjFGg93gj7qqiZRjfycBnuxqWLK69VsUKmh1pHAWO28vNyP_000aAvNgEALw_wcB&group_id=169035367329&gad_source=1&gclid=Cj0KCQiAvP-6BhDyARIsAJ3uv7b8VjFGg93gj7qqiZRjfycBnuxqWLK69VsUKmh1pHAWO28vNyP_000aAvNgEALw_wcB">Hotel Cabang Jakarta</a></li>
+            <li><a href="https://www.agoda.com/id-id/city/bandung-id.html?site_id=1922865&tag=19ebfa3c-dbf8-4b6b-b605-219d3a6a6447&gad_source=1&device=c&network=g&adid=702651599701&rand=77086490233773586&expid=&adpos=&aud=kwd-286648915&gclid=Cj0KCQiAvP-6BhDyARIsAJ3uv7YPHbLLgbSrzyMAD0vS_5XlihFyPVRjbFzWO9FUemH0c-aRTmKwaqIaAi9ZEALw_wcB&pslc=1&ds=MDVTyn%2FpPSLFktvF">Hotel Cabang Bandung</a></li>
+            <li><a href="https://www.agoda.com/id-id/city/bali-id.html?site_id=1922865&tag=189cfe00-7d1f-4d50-966d-87d0f07f14aa&gad_source=1&gclid=Cj0KCQiAvP-6BhDyARIsAJ3uv7YaXozq4UGnGGBu6XDTTfUJjEtrA8mCbx7-AzRWsxpl4J4yHdCAtFAaAiOlEALw_wcB&ds=vKIqlv5ezrjxAsHU">Hotel Cabang Bali</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Informasi Sosial Media kami</h5>
+          <p>Informasi lebih lanjut</p>
+          <p><a href="https://instagram.com/_hydrhmt">
+            <i class="bi bi-instagram"></i></i>_hydrhmt</a></p>
+          <p><a href="https://youtube.com/@hydcoding?feature=shared"><i class="bi bi-youtube"></i> Rohmatul Hidayat</a></p>
+          <p><a href="https://github.com/rohmatulhidayat11"><i class="bi bi-github"></i> rohmatulhidayat11</a></p>
+      </div> 
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <a href="#"><i class="icon ion-logo-facebook"></i></a>
+            <a href="#"><i class="icon ion-logo-instagram"></i></a>
+            <a href="#"><i class="icon ion-logo-twitter"></i></a>
+            <a href="#"><i class="icon ion-logo-youtube"></i></a>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <small>2024 &copy; Rohmat informatics engineering. Made by <a href="https://instagram.com/_hydrhmt" target="blank" class="external-links">@Rohmatul Hidayat</a></small>
+          </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
